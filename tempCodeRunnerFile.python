@@ -1,0 +1,58 @@
+#Nomor 1 
+# Mengambil input nilai persentase dari pengguna
+percentage = float(input("Enter the student's percentage: "))
+# Mengevaluasi kinerja berdasarkan nilai persentase
+if percentage >= 90:
+    print("Excellent performance")  # Jika nilai >= 90
+elif percentage >= 80:
+    print("Very Good performance")  # Jika nilai >= 80 dan kurang dari 90
+elif percentage >= 70:
+    print("Good performance")       # Jika nilai >= 70 dan kurang dari 80
+elif percentage >= 60:
+    print("Average performance")    # Jika nilai >= 60 dan kurang dari 70
+else:
+    print("Needs Improvement")      # Jika nilai kurang dari 60
+
+#Nomor 2
+# Mengambil tiga angka dari pengguna
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+num3 = float(input("Enter the third number: "))
+# Membandingkan ketiga angka untuk menemukan yang terbesar
+if num1 >= num2 and num1 >= num3:
+    print(f"The largest number is: {num1}")  # Jika num1 lebih besar atau sama dengan num2 dan num3
+elif num2 >= num1 and num2 >= num3:
+    print(f"The largest number is: {num2}")  # Jika num2 lebih besar atau sama dengan num1 dan num3
+else:
+    print(f"The largest number is: {num3}")  # Jika num3 yang terbesar
+
+#nomor 3
+# Mengambil nilai n dari pengguna
+n = int(input("Enter the maximum value of Fibonacci series: "))
+# Inisialisasi dua angka pertama dalam deret Fibonacci
+a, b = 0, 1
+# Mencetak deret Fibonacci hingga mencapai nilai maksimal n
+print("Fibonacci series up to", n, ":")
+while a <= n:
+    print(a, end=" ")  # Mencetak nilai a dan tetap berada dalam satu baris
+    a, b = b, a + b    # Memperbarui nilai a dan b untuk mendapatkan angka Fibonacci berikutnya
+
+#nomor 4
+# Mengambil nilai n dari pengguna
+n = int(input("Enter the value of n: "))
+# Mencetak bilangan ganjil dari 1 hingga n
+print("Odd numbers up to n:")
+for i in range(1, n+1):
+    if i % 2 != 0:
+        print(i, end=" ")  # Jika i ganjil, cetak i dan tetap berada dalam satu baris
+
+
+#nomor 5
+# Mengambil nilai n dari pengguna
+n = int(input("Enter the value of n: "))
+# Mencetak pola dengan jumlah angka yang sesuai baris
+for i in range(1, n+1):
+    print((str(i) + " ") * i)  # Mencetak angka i sebanyak i kali dalam setiap baris
+
+
+
